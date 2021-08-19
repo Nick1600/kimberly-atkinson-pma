@@ -110,3 +110,32 @@ header {
 #bottom-right {
     grid-area: 3 / 2 / 4 / 3;
 }
+
+/*Quote*/
+#quote {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+/*Social Links*/
+#social {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-logo {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+.instagram-path  {
+    fill: black;
+}
+#facebook-path {
+    fill: black;
+}
+
