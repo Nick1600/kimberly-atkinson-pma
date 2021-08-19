@@ -4,18 +4,58 @@
     padding: 0;
 }
 html {
-    font-size: 13px;
+    font-size: 20px;
     font-family: 'Cabin', sans-serif;
+    width: 100vw;
 }
 
 /*header*/
 header {
     height: 600px;
     width: 100%;
+    text-align: center;
+
     background-image: url('media/desk-cover.jpg');
     background-size: fill;
     background-repeat: no-repeat;
-    background-clip: border-box;
+    /*background-clip: border-box;*/
     background-attachment: fixed;
-    background-position: 5% 32%;
+    background-position: 50% 32%;
+}
+#header-overlay {
+    width: 100vw;
+    height: 600px;
+    z-index: 1;
+    background-color:rgba(255,245,250, 0.65);
+    top: 0;
+    left: 0;
+}
+#header-logo {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    margin-left: -23%;
+    width: 50%;
+}
+
+#nav-list {
+    position: relative;
+    bottom: 75px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    list-style-type: none;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+#nav-list li {
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+#nav-list li:hover {
+    color: black;
+    cursor: pointer;
 }
